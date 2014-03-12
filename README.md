@@ -2,8 +2,6 @@
 
 A tiny puppet module for managing ssmtp
 
-# Usage
-include jdk
 
 # Copyright and license
 Copyright [2014] [Ronen Narkis]
