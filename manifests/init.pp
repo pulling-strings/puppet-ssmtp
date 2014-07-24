@@ -1,10 +1,14 @@
 # Yet another ssmtp module
 class ssmtp(
-  $email='',
-  $host='',
-  $user='',
-  $pass='',
+  $email=false,
+  $mailhub='smtp.gmail.com:587',
+  $user=false,
+  $pass=false,
 ){
+
+  validate_string($email)
+  validate_string($user)
+  validate_string($pass)
 
   package{'ssmtp':
     ensure  => present
